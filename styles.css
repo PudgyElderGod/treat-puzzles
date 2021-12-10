@@ -1,0 +1,62 @@
+/* .carousel-item {
+    object-fit: cover;
+    object-position: center center;
+    height: 300px;
+    align-items: center;
+}
+
+.c-img {
+    object-position: center center;
+} */
+
+.carousel .carousel-inner {
+    height: 300px;
+}
+
+.carousel-item {
+    position: relative;
+    height: 100%;
+}
+
+.carousel-inner {
+    position: relative;
+}
+
+.carousel-text {
+    text-align: center;
+    color: white;
+}
+
+.c-img {
+    position: relative;
+    background: rgba(0, 0, 0, 0.3);
+    padding-top:100px;
+    padding-bottom:200px;
+}
+
+.c-img:after {
+    content: "";
+    position: absolute;
+    /* background-image: url("old-dog.jpeg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+.christmas:after {
+    background-image: url("dog-christmas.jpeg");
+}
+
+.old:after {
+    background-image: url("old-dog.jpeg");
+}
+
+.lick:after {
+    background-image: url("https://static.onecms.io/wp-content/uploads/sites/20/2020/10/29/hyper-pet-iq-treat-mat-dog-lick-mat-fun-alternative-to-slow-feeder-dog-bowls-tout.jpg");
+}
